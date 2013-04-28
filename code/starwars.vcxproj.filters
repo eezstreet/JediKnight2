@@ -1,0 +1,868 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d0137a4e-263c-44b2-98bc-8879bec94df6}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;hpj;bat;for;f90</Extensions>
+    </Filter>
+    <Filter Include="Source Files\OpenAL">
+      <UniqueIdentifier>{ae82fed4-42dd-4432-afbe-5eee8c185242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8e8651a9-7790-45ef-9b92-0f6dbb7f4a02}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{bfbb83e1-8883-4daa-88e9-3d5df394b97e}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="MP3 Source">
+      <UniqueIdentifier>{d46ff20e-ef5c-4721-a710-901cc1277ae0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MP3 Source\MP3 Headers">
+      <UniqueIdentifier>{ea9f30b7-2dd7-47cc-8993-15bd6bc8fd6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ghoul2">
+      <UniqueIdentifier>{4979331d-a1dd-46a6-89a0-4cc3ce8f7510}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer Source">
+      <UniqueIdentifier>{58266b18-daa6-4def-bf72-cbe6f9bcbdf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer Source\Renderer Headers">
+      <UniqueIdentifier>{930db15e-69b1-48a7-8fcb-ef349d1c4829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI Source">
+      <UniqueIdentifier>{628b314b-eb76-41b5-a2a4-b02aa93488c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI Source\UI Headers">
+      <UniqueIdentifier>{4e7c894b-cca1-478d-a631-70ef416302e9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="JPEG">
+      <UniqueIdentifier>{bbb54310-44df-483c-a99c-b1e7e21104ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="encryption">
+      <UniqueIdentifier>{26ccd40d-da7f-4f27-b0b9-e8b57311e46b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="client\cl_cgame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_cin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_console.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_keys.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_mp3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_parse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_scrn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_ui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cm_load.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cm_patch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cm_polylib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cm_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cm_trace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cmd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cvar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="server\exe_headers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\files.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game\genericparser2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\hstring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\md4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\msg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\net_chan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game\q_math.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game\q_shared.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\snd_ambient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\snd_dma.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\snd_mem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\snd_mix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\snd_music.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\strip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_ccmds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_savegame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_snapshot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_world.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\unzip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\vmachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win_input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win_shared.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win_snd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win_syscon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win_video.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win_wndproc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\cdct.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\csbt.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\csbtb.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\csbtL3.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\cup.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\cupini.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\cupL1.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\cupl3.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\cwin.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\cwinb.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\cwinm.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\hwin.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\l3dq.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\l3init.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\mdct.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\mhead.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\msis.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\towave.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\uph.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\upsf.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\wavep.c">
+      <Filter>MP3 Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ghoul2\G2_API.cpp">
+      <Filter>Ghoul2</Filter>
+    </ClCompile>
+    <ClCompile Include="ghoul2\G2_bolts.cpp">
+      <Filter>Ghoul2</Filter>
+    </ClCompile>
+    <ClCompile Include="ghoul2\G2_bones.cpp">
+      <Filter>Ghoul2</Filter>
+    </ClCompile>
+    <ClCompile Include="ghoul2\G2_misc.cpp">
+      <Filter>Ghoul2</Filter>
+    </ClCompile>
+    <ClCompile Include="ghoul2\G2_surfaces.cpp">
+      <Filter>Ghoul2</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\MatComp.c">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_animation.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_backend.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_bsp.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_cmds.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_curve.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_draw.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_font.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_ghoul2.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_image.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_init.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_jpeg_interface.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_light.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_main.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_marks.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_mesh.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_model.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_noise.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_quicksprite.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_scene.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_shade.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_shade_calc.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_shader.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_shadows.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_sky.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_stl.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_surface.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_surfacesprites.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_world.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\tr_WorldEffects.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win_gamma.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win_glimp.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win_qgl.cpp">
+      <Filter>Renderer Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ui_atoms.cpp">
+      <Filter>UI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ui_connect.cpp">
+      <Filter>UI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ui_debug.cpp">
+      <Filter>UI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ui_main.cpp">
+      <Filter>UI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ui_shared.cpp">
+      <Filter>UI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ui_syscalls.cpp">
+      <Filter>UI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jcapimin.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jccoefct.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jccolor.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jcdctmgr.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jchuff.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jcinit.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jcmainct.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jcmarker.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jcmaster.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jcomapi.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jcparam.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jcphuff.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jcprepct.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jcsample.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jctrans.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jdapimin.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jdapistd.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jdatadst.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jdatasrc.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jdcoefct.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jdcolor.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jddctmgr.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jdhuff.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jdinput.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jdmainct.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jdmarker.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jdmaster.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jdpostct.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jdsample.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jdtrans.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jerror.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jfdctflt.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jidctflt.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jmemmgr.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jmemnobs.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg-6\jutils.cpp">
+      <Filter>JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="encryption\buffer.cpp">
+      <Filter>encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="encryption\cpp_interface.cpp">
+      <Filter>encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="encryption\sockets.cpp">
+      <Filter>encryption</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="client\OpenAL\al.h">
+      <Filter>Source Files\OpenAL</Filter>
+    </ClInclude>
+    <ClInclude Include="client\OpenAL\alc.h">
+      <Filter>Source Files\OpenAL</Filter>
+    </ClInclude>
+    <ClInclude Include="client\OpenAL\alctypes.h">
+      <Filter>Source Files\OpenAL</Filter>
+    </ClInclude>
+    <ClInclude Include="client\OpenAL\altypes.h">
+      <Filter>Source Files\OpenAL</Filter>
+    </ClInclude>
+    <ClInclude Include="client\OpenAL\alu.h">
+      <Filter>Source Files\OpenAL</Filter>
+    </ClInclude>
+    <ClInclude Include="client\OpenAL\alut.h">
+      <Filter>Source Files\OpenAL</Filter>
+    </ClInclude>
+    <ClInclude Include="game\anims.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game\b_public.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game\bg_public.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Icarus\BlockStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game\bset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game\bstate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cgame\cg_public.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="client\cl_mp3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="client\client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="client\client_ui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\cm_local.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\cm_patch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\cm_polylib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\cm_public.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game\common_headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="server\exe_headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game\g_functions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game\g_items.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game\g_local.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game\g_nav.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game\g_public.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game\g_shared.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game\genericparser2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\hstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Icarus\ICARUS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Icarus\Instance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Icarus\interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Icarus\Interpreter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="client\keys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Icarus\sequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Icarus\Sequencer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="server\server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="client\snd_ambient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="client\snd_local.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="client\snd_music.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="client\snd_public.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\sstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game\statindex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\strip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\stripPublic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Icarus\TaskManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game\teams.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Icarus\Tokenizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\unzip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="client\vmachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game\weapons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\win_local.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\config.h">
+      <Filter>MP3 Source\MP3 Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\copyright.h">
+      <Filter>MP3 Source\MP3 Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\htable.h">
+      <Filter>MP3 Source\MP3 Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\jdw.h">
+      <Filter>MP3 Source\MP3 Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\L3.h">
+      <Filter>MP3 Source\MP3 Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\mhead.h">
+      <Filter>MP3 Source\MP3 Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\mp3struct.h">
+      <Filter>MP3 Source\MP3 Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\port.h">
+      <Filter>MP3 Source\MP3 Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\small_header.h">
+      <Filter>MP3 Source\MP3 Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\tableawd.h">
+      <Filter>MP3 Source\MP3 Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ghoul2\G2.h">
+      <Filter>Ghoul2</Filter>
+    </ClInclude>
+    <ClInclude Include="game\ghoul2_shared.h">
+      <Filter>Ghoul2</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\matcomp.h">
+      <Filter>Ghoul2</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\mdx_format.h">
+      <Filter>Ghoul2</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\MiniHeap.h">
+      <Filter>Ghoul2</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\glext.h">
+      <Filter>Renderer Source\Renderer Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\glw_win.h">
+      <Filter>Renderer Source\Renderer Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\qgl.h">
+      <Filter>Renderer Source\Renderer Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\tr_font.h">
+      <Filter>Renderer Source\Renderer Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\tr_jpeg_interface.h">
+      <Filter>Renderer Source\Renderer Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\tr_local.h">
+      <Filter>Renderer Source\Renderer Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\tr_public.h">
+      <Filter>Renderer Source\Renderer Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\tr_quicksprite.h">
+      <Filter>Renderer Source\Renderer Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\tr_stl.h">
+      <Filter>Renderer Source\Renderer Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\tr_types.h">
+      <Filter>Renderer Source\Renderer Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\tr_WorldEffects.h">
+      <Filter>Renderer Source\Renderer Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="game\channels.h">
+      <Filter>UI Source\UI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\gameinfo.h">
+      <Filter>UI Source\UI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="client\keycodes.h">
+      <Filter>UI Source\UI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\menudef.h">
+      <Filter>UI Source\UI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="game\q_shared.h">
+      <Filter>UI Source\UI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\qcommon.h">
+      <Filter>UI Source\UI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\qfiles.h">
+      <Filter>UI Source\UI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\stv_version.h">
+      <Filter>UI Source\UI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="game\surfaceflags.h">
+      <Filter>UI Source\UI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\tags.h">
+      <Filter>UI Source\UI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\ui_local.h">
+      <Filter>UI Source\UI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\ui_playerinfo.h">
+      <Filter>UI Source\UI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\ui_public.h">
+      <Filter>UI Source\UI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\ui_shared.h">
+      <Filter>UI Source\UI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg-6\jchuff.h">
+      <Filter>JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg-6\jconfig.h">
+      <Filter>JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg-6\jdct.h">
+      <Filter>JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg-6\jdhuff.h">
+      <Filter>JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg-6\jerror.h">
+      <Filter>JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg-6\jinclude.h">
+      <Filter>JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg-6\jmemsys.h">
+      <Filter>JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg-6\jmorecfg.h">
+      <Filter>JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg-6\jpegint.h">
+      <Filter>JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg-6\jpeglib.h">
+      <Filter>JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg-6\jversion.h">
+      <Filter>JPEG</Filter>
+    </ClInclude>
+    <ClInclude Include="encryption\buffer.h">
+      <Filter>encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="encryption\cpp_interface.h">
+      <Filter>encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="encryption\encryption.h">
+      <Filter>encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="encryption\sockets.h">
+      <Filter>encryption</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="ALut.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="OpenAL32.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="win32\winquake.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="win32\background.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="win32\clear.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="OpenAL32.dll">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="win32\starwars.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
