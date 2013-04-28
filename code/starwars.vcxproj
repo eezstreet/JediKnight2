@@ -194,6 +194,7 @@
       <PrecompiledHeaderOutputFile>.\Debug\exe\starwars.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>.\Debug\exe\</ObjectFileName>
       <ProgramDataBaseFileName>.\Debug\exe\</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>

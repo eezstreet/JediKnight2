@@ -146,6 +146,7 @@
       <PrecompiledHeaderFile>g_headers.h</PrecompiledHeaderFile>
       <ObjectFileName>.\..\Debug\game\</ObjectFileName>
       <ProgramDataBaseFileName>.\..\Debug\game\</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
