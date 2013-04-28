@@ -805,6 +805,7 @@ static void WP_ParseWeaponParms(const char **holdBuf)
 			!Q_stricmp( token, "stopForce" ) ||
 			!Q_stricmp( token, "selectForce" ) )
 		{
+			SkipRestOfLine( holdBuf );
 			continue;	// Deprecated. Originally part of Force Feedback stuff, which is illegal to redistribute. --eez
 		}
 		Com_Error(ERR_FATAL,"bad parameter in external weapon data '%s'\n", token);		
