@@ -270,66 +270,6 @@ void	Sys_FreeFileList( char **list ) {
 
 //========================================================
 
-
-/*
-================
-Sys_ScanForCD
-
-Search all the drives to see if there is a valid CD to grab
-the cddir from
-================
-*/
-#ifdef FINAL_BUILD
-static qboolean Sys_ScanForCD( void ) {
-	char		drive[4];
-	FILE		*f;
-	char		test[MAX_OSPATH];
-
-	drive[0] = 'c';
-	drive[1] = ':';
-	drive[2] = '\\';
-	drive[3] = 0;
-
-	// scan the drives
-	for ( drive[0] = 'c' ; drive[0] <= 'z' ; drive[0]++ ) {
-		if ( GetDriveType (drive) == DRIVE_CDROM ) {			
-			BOOL Result;
-			char VolumeName[MAX_PATH],FileSystemName[MAX_PATH];
-			DWORD VolumeSerialNumber,MaximumComponentLength,FileSystemFlags;
-			
-			Result = GetVolumeInformation(drive,VolumeName,sizeof(VolumeName),&VolumeSerialNumber,
-				&MaximumComponentLength,&FileSystemFlags,FileSystemName,sizeof(FileSystemName));
-
-			if (Result && (strcmpi(VolumeName,"JEDIOUTCAST") == 0 ) )
-			{
-				sprintf (test, "%s%s\\%s", drive, CD_BASEDIR, CD_EXE);
-				f = fopen( test, "r");
-				if ( f ) {
-					fclose (f);
-					return Result;
-				}
-			}
-		}
-	}
-
-	return qfalse;
-}
-#endif
-/*
-================
-Sys_CheckCD
-
-Return true if the proper CD is in the drive
-================
-*/
-qboolean	Sys_CheckCD( void ) {
-#ifdef FINAL_BUILD
-	return Sys_ScanForCD();
-#else
-	return qtrue;
-#endif
-}
-
 /*
 ================
 Sys_GetClipboardData
@@ -1092,11 +1032,6 @@ int WINAPI WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLin
 
 	// get the initial time base
 	Sys_Milliseconds();
-
-#if 0
-	// if we find the CD, add a +set cddir xxx command line
-	Sys_ScanForCD();
-#endif
 
 	Sys_InitStreamThread();
 
