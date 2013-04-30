@@ -231,7 +231,7 @@ void SV_SpawnServer( char *server, ForceReload_e eForceReload, qboolean bAllowSc
 	// create a heap for Ghoul2 to use for game side model vertex transforms used in collision detection
 	if (!G2VertSpaceServer)
 	{
-		static const int MiniHeapSize=128 * 1024; // maxsize of ghoul2 miniheap
+		static const int MiniHeapSize=256 * 1024; // maxsize of ghoul2 miniheap
 		G2VertSpaceServer	= new CMiniHeap(MiniHeapSize);
 	}
 
