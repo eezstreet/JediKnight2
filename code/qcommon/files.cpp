@@ -178,13 +178,6 @@ or configs will never get loaded from disk!
 #define	DEMO_PAK_CHECKSUM	1431467275
 #define	DEMO_PAK_MAXFILES	5174u
 
-// if this is defined, the executable positively won't work with any paks other
-// than the demo pak, even if productid is present.  This is only used for our
-// last demo release to prevent the mac and linux users from using the demo
-// executable with the production windows pak before the mac/linux products
-// hit the shelves a little later
-//#define	PRE_RELEASE_DEMO
-
 
 #define MAX_ZPATH			256
 #define	MAX_SEARCH_PATHS	2048
@@ -258,16 +251,6 @@ fileHandleData_t	fsh[MAX_FILE_HANDLES];
 
 //static int		fs_numServerPaks;
 //static int		fs_serverPaks[MAX_SEARCH_PATHS];
-
-// productId: This file is copyright 2000 Raven Software, and may not be duplicated except during a licensed installation of the full commercial version of Star Wars: Jedi Outcast
-static byte fs_scrambledProductId[165] = {
- 42, 143, 149, 190,  10, 197, 225, 133, 243,  63, 189, 182, 226,  56, 143,  17, 215,  37, 197, 218,  50, 103,  24, 235, 246, 191, 180, 149, 160, 170, 230,
- 52, 176, 231,  15, 194, 236, 247, 159, 168, 132, 154,  24, 133,  67,  85,  36,  97,  99,  86, 117, 189, 212, 156, 236, 153,  68,  10, 196, 241,  39,
-219, 156,  88,  93, 198, 200, 232, 142,  67,  45, 209,  53, 186, 228, 241, 162, 127, 213,  83,   7, 121,  11,  93, 123, 243, 148, 240, 229,  42,  42,
-  6, 215, 239, 112, 120, 240, 244, 104,  12,  38,  47, 201, 253, 223, 208, 154,  69, 141, 157,  32, 117, 166, 146, 236,  59,  15, 223,  52,  89, 133,
- 64, 201,  56, 119,  25, 211, 152, 159,  11,  92,  59, 207,  81, 123,   0, 121, 241, 116,  42,  36, 251,  51, 149,  79, 165,  12, 106, 187, 225, 203,
- 99, 102,  69,  97,  81,  27, 107,  95, 164,  42,  36, 189,  94, 126
-};
 
 /*
 ==============
@@ -1943,18 +1926,6 @@ static void FS_AddGameDirectory( const char *path, const char *dir ) {
 	pakfile = FS_BuildOSPath( path, dir, "" );
 	pakfile[ strlen(pakfile) - 1 ] = 0;	// strip the trailing slash
 
-#ifdef PRE_RELEASE_DEMO
-	pakfile = FS_BuildOSPath( path, dir, "asset0.pksp" );
-	if ( ( pak = FS_LoadZipFile( pakfile ) ) == 0 )
-		return;
-	if ( (pak->numfiles^ 0x84268436u) != (DEMO_PAK_MAXFILES^ 0x84268436u))	//don't let them use the full version, even if renamed!
-		return;
-	search = (searchpath_t*)Z_Malloc(sizeof(searchpath_t), TAG_FILESYS, qtrue );
-	search->pack = pak;
-	search->dir = 0;
-	search->next = fs_searchpaths;
-	fs_searchpaths = search;		
-#else
 	pakfiles = Sys_ListFiles( pakfile, ".pk3", &numfiles, qfalse );
 
 	// sort them so that later alphabetic matches override
@@ -1981,7 +1952,6 @@ static void FS_AddGameDirectory( const char *path, const char *dir ) {
 
 	// done
 	Sys_FreeFileList( pakfiles );
-#endif
 }
 
 /*
@@ -2076,42 +2046,12 @@ if the full version is not found
 static void FS_SetRestrictions( void ) {
 	searchpath_t	*path;
 
-#ifndef PRE_RELEASE_DEMO
-	byte	*productId;
-
-	// if fs_restrict is set, don't even look for the id file,
-	// which allows the demo release to be tested even if
-	// the full game is present
-	if ( !fs_restrict->integer ) {
-		// look for the full game id
-		FS_ReadFile( "productid.txt", (void **)&productId );
-		if ( productId ) {
-			// check against the hardcoded string
-			unsigned int		seed, i;
-
-			seed = 102270;
-			for ( i = 0 ; i < sizeof( fs_scrambledProductId ) ; i++ ) {
-#if 0
-				fs_scrambledProductId[i]  = productId[i] ^ (seed&255);
-				Com_Printf("%3i, ", fs_scrambledProductId[i]);
-#endif
-				if ( ( fs_scrambledProductId[i] ^ (seed&255) ) != productId[i] ) {
-					break;
-				}
-				seed = (69069 * seed + 1);
-			}
-
-			FS_FreeFile( productId );
-
-			if ( i == sizeof( fs_scrambledProductId ) ) {
-				return;	// no restrictions
-			}
-			Com_Error( ERR_FATAL, "Invalid product identification" );
-		}
+	if( !Cvar_VariableIntegerValue("com_demo") )
+	{
+		return;
 	}
-#endif
+
 	Cvar_Set( "fs_restrict", "1" );
-	Cvar_Set( "com_demo", "1" );
 
 	Com_Printf( "\nRunning in restricted demo mode.\n\n" );
 
